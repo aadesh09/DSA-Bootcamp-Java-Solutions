@@ -541,6 +541,14 @@ static void pattern231(int n) {
 		System.out.format("*%"+(2*n-2)+"s", "*");
 		System.out.format("%"+(2*n-2)+"s%n", "*");
 }
+
+static void pattern232(int n) {
+	System.out.format("%"+(n)+"s%"+(2*n-2)+"s%n","*","*");
+	for (int row = 2; row <=n-1 ; row++) {
+		System.out.format("%"+(n-row+1)+"s%"+(2*row-2)+"s%"+(2*n-2*row)+"s%"+(2*row-2)+"s%n","*","*","*","*");
+	}
+	System.out.format("*%"+(2*n-2)+"s%"+(2*n-2)+"s%n","*","*");
+}
 	
 static void pattern24(int n) {
 	for (int row = 1; row <= 2*n; row++) {
